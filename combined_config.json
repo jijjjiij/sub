@@ -1,0 +1,287 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "1.0.0.1"
+    ],
+    "queryStrategy": "UseIP"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "udp": true,
+        "auth": "noauth"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": false,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": false
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": false,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "vless_eu",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ns.90909.club",
+            "port": 2096,
+            "users": [
+              {
+                "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality"
+        },
+        "realitySettings": {
+          "fingerprint": "safari",
+          "serverName": "id.vk.com",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        }
+      }
+    },
+    {
+      "tag": "vless_ru",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ss.90909.club",
+            "port": 2096,
+            "users": [
+              {
+                "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality"
+        },
+        "realitySettings": {
+          "fingerprint": "safari",
+          "serverName": "id.vk.com",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        }
+      }
+    },
+    {
+      "tag": "vless_fallback",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "bs.90909.club",
+            "port": 2096,
+            "users": [
+              {
+                "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality"
+        },
+        "realitySettings": {
+          "fingerprint": "safari",
+          "serverName": "id.vk.com",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        }
+      }
+    },
+    {
+      "tag": "vless_us",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "us.90909.club",
+            "port": 2096,
+            "users": [
+              {
+                "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "grpcSettings": {
+          "serviceName": "vless-grpc-reality"
+        },
+        "realitySettings": {
+          "fingerprint": "safari",
+          "serverName": "id.vk.com",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        }
+      }
+    },
+    {
+      "tag": "proxy",
+      "protocol": "hysteria",
+      "settings": {
+        "address": "hv0pfq.ilovecats.space",
+        "port": 443,
+        "version": 2
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "db8178f5-2f05-480a-810d-b9cd23cb5653"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hv0pfq.ilovecats.space",
+          "enableSessionResumption": false,
+          "fingerprint": "firefox",
+          "alpn": [
+            "h3"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {}
+    }
+  ],
+  "routing": {
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch",
+    "balancers": [
+      {
+        "tag": "vless_balancer",
+        "selector": [
+          "vless_eu",
+          "vless_ru",
+          "vless_fallback",
+          "vless_us"
+        ],
+        "fallbackTag": "vless_fallback",
+        "strategy": {
+          "type": "leastPing"
+        }
+      }
+    ],
+    "rules": [
+      {
+        "type": "field",
+        "protocol": [
+          "bittorrent"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "domain:2ip.ru",
+          "domain:2ip.io",
+          "domain:whoer.net",
+          "domain:yoomoney.ru",
+          "domain:browserleaks.com"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:category-ru",
+          "domain:ru",
+          "domain:su"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": [
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "127.0.0.0/8",
+          "169.254.0.0/16",
+          "172.16.0.0/12",
+          "192.168.0.0/16",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "balancerTag": "vless_balancer"
+      }
+    ]
+  },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "10m",
+    "probeURL": "https://www.google.com/generate_204",
+    "subjectSelector": [
+      "vless_eu",
+      "vless_ru",
+      "vless_fallback",
+      "vless_us"
+    ]
+  },
+  "remarks": "DELTA VPN + Happ • объединённая конфигурация"
+}
