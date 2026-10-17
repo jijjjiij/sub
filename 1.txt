@@ -1,5 +1,5 @@
 #profile-title: DELTA VPN • Unlimited
-#subscription-userinfo: upload=0; download=0; total=999999999999; expire=0
+#subscription-userinfo: upload=0; download=67; total=999999999999; expire=0
 #profile-update-interval: 6
 #announce: ⚡ DELTA VPN
 
