@@ -1,0 +1,1452 @@
+{
+  "profile_title": "DELTA VPN • Unlimited",
+  "subscription_userinfo": {
+    "upload": 0,
+    "download": 67,
+    "total": 999999999999,
+    "expire": 0
+  },
+  "profile_update_interval": 6,
+  "announce": "⚡ DELTA VPN",
+  "servers": [
+    {
+      "name": "Финляндия",
+      "protocol": "vless",
+      "uuid": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+      "address": "bs.90909.club",
+      "port": 2096,
+      "params": {
+        "type": "grpc",
+        "security": "reality",
+        "fp": "safari",
+        "sni": "id.vk.com",
+        "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "serviceName": "vless-grpc-reality"
+      },
+      "link": "vless://452a44b2-037a-43e9-a3c8-ff352db11db6@bs.90909.club:2096?type=grpc&security=reality&fp=safari&sni=id.vk.com&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&serviceName=vless-grpc-reality#Финляндия"
+    },
+    {
+      "name": "🇺🇸 Основной США",
+      "protocol": "vless",
+      "uuid": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+      "address": "us.90909.club",
+      "port": 2096,
+      "params": {
+        "type": "grpc",
+        "security": "reality",
+        "serviceName": "vless-grpc-reality",
+        "fp": "safari",
+        "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "sni": "id.vk.com"
+      },
+      "link": "vless://452a44b2-037a-43e9-a3c8-ff352db11db6@us.90909.club:2096?type=grpc&security=reality&serviceName=vless-grpc-reality&fp=safari&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sni=id.vk.com#%F0%9F%87%BA%F0%9F%87%B8%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%A1%D0%A8%D0%90"
+    },
+    {
+      "name": "🇺🇸 Резерв (bs)",
+      "protocol": "vless",
+      "uuid": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+      "address": "bs.90909.club",
+      "port": 2096,
+      "params": {
+        "type": "grpc",
+        "security": "reality",
+        "serviceName": "vless-grpc-reality",
+        "fp": "safari",
+        "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "sni": "id.vk.com"
+      },
+      "link": "vless://452a44b2-037a-43e9-a3c8-ff352db11db6@bs.90909.club:2096?type=grpc&security=reality&serviceName=vless-grpc-reality&fp=safari&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sni=id.vk.com#%F0%9F%87%BA%F0%9F%87%B8%20%D0%A0%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%20(bs)"
+    },
+    {
+      "name": "⚪ Белый список | RU (ns)",
+      "protocol": "vless",
+      "uuid": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+      "address": "ns.90909.club",
+      "port": 2096,
+      "params": {
+        "type": "grpc",
+        "security": "reality",
+        "fp": "safari",
+        "sni": "id.vk.com",
+        "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "serviceName": "vless-grpc-reality"
+      },
+      "link": "vless://452a44b2-037a-43e9-a3c8-ff352db11db6@ns.90909.club:2096?type=grpc&security=reality&fp=safari&sni=id.vk.com&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&serviceName=vless-grpc-reality#⚪%20Белый%20список%20|%20RU%20(ns)"
+    },
+    {
+      "name": "⚪ Белый список | Зарубеж (bs)",
+      "protocol": "vless",
+      "uuid": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+      "address": "bs.90909.club",
+      "port": 2096,
+      "params": {
+        "type": "grpc",
+        "security": "reality",
+        "fp": "safari",
+        "sni": "id.vk.com",
+        "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "serviceName": "vless-grpc-reality"
+      },
+      "link": "vless://452a44b2-037a-43e9-a3c8-ff352db11db6@bs.90909.club:2096?type=grpc&security=reality&fp=safari&sni=id.vk.com&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&serviceName=vless-grpc-reality#⚪%20Белый%20список%20|%20Зарубеж%20(bs)"
+    },
+    {
+      "name": "⚪ Белый список | EU (ss)",
+      "protocol": "vless",
+      "uuid": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+      "address": "ss.90909.club",
+      "port": 2096,
+      "params": {
+        "encryption": "none",
+        "security": "reality",
+        "sni": "id.vk.com",
+        "fp": "safari",
+        "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "type": "grpc",
+        "serviceName": "vless-grpc-reality"
+      },
+      "link": "vless://452a44b2-037a-43e9-a3c8-ff352db11db6@ss.90909.club:2096?encryption=none&security=reality&sni=id.vk.com&fp=safari&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&type=grpc&serviceName=vless-grpc-reality#⚪%20Белый%20список%20|%20EU%20(ss)"
+    },
+    {
+      "name": "🌍 Обычный | США (us",
+      "protocol": "vless",
+      "uuid": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+      "address": "us.90909.club",
+      "port": 2096,
+      "params": {
+        "type": "grpc",
+        "security": "reality",
+        "serviceName": "vless-grpc-reality",
+        "fp": "safari",
+        "pbk": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "sni": "id.vk.com"
+      },
+      "link": "vless://452a44b2-037a-43e9-a3c8-ff352db11db6@us.90909.club:2096?type=grpc&security=reality&serviceName=vless-grpc-reality&fp=safari&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sni=id.vk.com#🌍%20Обычный%20|%20США%20(us"
+    }
+  ],
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "1.0.0.1"
+    ],
+    "queryStrategy": "UseIP"
+  },
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "protocol": [
+          "bittorrent"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "domain:2ip.ru",
+          "domain:2ip.io",
+          "domain:whoer.net",
+          "domain:yoomoney.ru",
+          "domain:browserleaks.com"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:category-ru",
+          "domain:ru",
+          "domain:su"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "ip": [
+          "10.0.0.0/8",
+          "100.64.0.0/10",
+          "127.0.0.0/8",
+          "169.254.0.0/16",
+          "172.16.0.0/12",
+          "192.168.0.0/16",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "type": "field",
+        "outboundTag": "direct"
+      }
+    ],
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "udp": true,
+        "auth": "noauth"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": false,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": false
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": false,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "hysteria",
+      "settings": {
+        "address": "hv0pfq.ilovecats.space",
+        "port": 443,
+        "version": 2
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "db8178f5-2f05-480a-810d-b9cd23cb5653"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "hv0pfq.ilovecats.space",
+          "enableSessionResumption": false,
+          "fingerprint": "firefox",
+          "alpn": [
+            "h3"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "remarks": "🇪🇪 Эстония | БЕСПЛАТНЫЙ 2",
+  "kubsub_configs": [
+    {
+      "remarks": "🇪🇺 Основной Европа",
+      "log": {
+        "loglevel": "warning"
+      },
+      "dns": {
+        "tag": "dns_out",
+        "queryStrategy": "UseIPv4",
+        "servers": [
+          {
+            "address": "77.88.8.8",
+            "domains": [
+              "domain:ru",
+              "domain:su",
+              "domain:by",
+              "domain:yandex.com",
+              "domain:vk.com",
+              "domain:ok.ru"
+            ],
+            "skipFallback": true
+          },
+          "https://9.9.9.9/dns-query",
+          "https://1.1.1.1/dns-query"
+        ]
+      },
+      "inbounds": [
+        {
+          "tag": "socks-in",
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": true
+          },
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        },
+        {
+          "tag": "http-in",
+          "listen": "127.0.0.1",
+          "port": 10809,
+          "protocol": "http",
+          "settings": {},
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "tag": "vless_eu",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "ns.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_ru",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "ss.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_fallback",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "bs.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "direct",
+          "protocol": "freedom",
+          "settings": {
+            "domainStrategy": "UseIPv4"
+          }
+        },
+        {
+          "tag": "block",
+          "protocol": "blackhole",
+          "settings": {}
+        }
+      ],
+      "observatory": {
+        "enableConcurrency": true,
+        "probeInterval": "10m",
+        "probeURL": "https://www.google.com/generate_204",
+        "subjectSelector": [
+          "vless_eu",
+          "vless_ru",
+          "vless_fallback"
+        ]
+      },
+      "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "balancers": [
+          {
+            "tag": "eu_balancer",
+            "selector": [
+              "vless_eu",
+              "vless_ru",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          },
+          {
+            "tag": "ru_balancer",
+            "selector": [
+              "vless_ru",
+              "vless_eu",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          }
+        ],
+        "rules": [
+          {
+            "type": "field",
+            "protocol": [
+              "bittorrent"
+            ],
+            "outboundTag": "direct"
+          },
+          {
+            "type": "field",
+            "balancerTag": "ru_balancer",
+            "domain": [
+              "domain:whatsapp.net",
+              "domain:whatsapp.com",
+              "domain:cdninstagram.com",
+              "domain:igcdn.com",
+              "domain:fbcdn.net",
+              "domain:sndcdn.com",
+              "domain:spotify.com",
+              "domain:scdn.co",
+              "domain:spotifycdn.com",
+              "domain:habr.com",
+              "domain:habrastorage.org",
+              "domain:tuta.com",
+              "domain:tutanota.com",
+              "domain:novayagazeta.ru",
+              "domain:tvrain.ru",
+              "domain:meduza.io",
+              "domain:bbc.com",
+              "domain:bbc.co.uk",
+              "domain:tiktok.com",
+              "domain:tiktokcdn.com",
+              "domain:bytedance.com",
+              "domain:byteimg.com",
+              "domain:musical.ly",
+              "domain:canva.com",
+              "domain:adobe.com",
+              "domain:gemini.google.com",
+              "domain:bard.google.com",
+              "domain:aistudio.google.com",
+              "domain:generativelanguage.googleapis.com"
+            ]
+          },
+          {
+            "type": "field",
+            "outboundTag": "direct",
+            "domain": [
+              "domain:yandex.com",
+              "domain:yandex.ru",
+              "domain:yandex.by",
+              "domain:yandex.net",
+              "domain:yastatic.net",
+              "domain:yandexcloud.net",
+              "domain:vk.com",
+              "domain:vk.me",
+              "domain:vkcache.com",
+              "domain:userapi.com",
+              "domain:vk-cdn.net",
+              "domain:mycdn.me",
+              "domain:sberbank.com",
+              "domain:ozonusercontent.com",
+              "domain:avito.st",
+              "domain:2gis.com",
+              "domain:gismeteo.net",
+              "domain:boosty.to",
+              "domain:livejournal.com",
+              "domain:kaspersky.com",
+              "domain:kaspersky-labs.com",
+              "domain:nnmclub.to",
+              "domain:kinozal.tv",
+              "domain:animego.org",
+              "domain:animego.me",
+              "domain:4pda.to",
+              "domain:wbstatic.net",
+              "domain:vk-portal.net",
+              "domain:tbank.ru",
+              "domain:rutube.ru",
+              "domain:cdn-vk.ru",
+              "domain:lmru.tech",
+              "domain:mradx.net",
+              "domain:ozone.ru",
+              "domain:okcdn.ru",
+              "domain:ok.ru",
+              "domain:cdn-tinkoff.ru",
+              "domain:lenta.com",
+              "domain:gismeteo.com",
+              "domain:ru",
+              "domain:xn--p1ai",
+              "domain:by",
+              "domain:su"
+            ]
+          },
+          {
+            "type": "field",
+            "network": "tcp,udp",
+            "balancerTag": "eu_balancer"
+          }
+        ]
+      },
+      "meta": null
+    },
+    {
+      "remarks": "🇺🇸 Основной США",
+      "log": {
+        "loglevel": "warning"
+      },
+      "dns": {
+        "tag": "dns_out",
+        "queryStrategy": "UseIPv4",
+        "servers": [
+          {
+            "address": "77.88.8.8",
+            "domains": [
+              "domain:ru",
+              "domain:su",
+              "domain:by",
+              "domain:yandex.com",
+              "domain:vk.com",
+              "domain:ok.ru"
+            ],
+            "skipFallback": true
+          },
+          "https://9.9.9.9/dns-query",
+          "https://1.1.1.1/dns-query"
+        ]
+      },
+      "inbounds": [
+        {
+          "tag": "socks-in",
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": true
+          },
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        },
+        {
+          "tag": "http-in",
+          "listen": "127.0.0.1",
+          "port": 10809,
+          "protocol": "http",
+          "settings": {},
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "tag": "vless_eu",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "us.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_ru",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "us.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_fallback",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "bs.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "direct",
+          "protocol": "freedom",
+          "settings": {
+            "domainStrategy": "UseIPv4"
+          }
+        },
+        {
+          "tag": "block",
+          "protocol": "blackhole",
+          "settings": {}
+        }
+      ],
+      "observatory": {
+        "enableConcurrency": true,
+        "probeInterval": "10m",
+        "probeURL": "https://www.google.com/generate_204",
+        "subjectSelector": [
+          "vless_eu",
+          "vless_ru",
+          "vless_fallback"
+        ]
+      },
+      "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "balancers": [
+          {
+            "tag": "eu_balancer",
+            "selector": [
+              "vless_eu",
+              "vless_ru",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          },
+          {
+            "tag": "ru_balancer",
+            "selector": [
+              "vless_ru",
+              "vless_eu",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          }
+        ],
+        "rules": [
+          {
+            "type": "field",
+            "protocol": [
+              "bittorrent"
+            ],
+            "outboundTag": "direct"
+          },
+          {
+            "type": "field",
+            "balancerTag": "ru_balancer",
+            "domain": [
+              "domain:whatsapp.net",
+              "domain:whatsapp.com",
+              "domain:cdninstagram.com",
+              "domain:igcdn.com",
+              "domain:fbcdn.net",
+              "domain:sndcdn.com",
+              "domain:spotify.com",
+              "domain:scdn.co",
+              "domain:spotifycdn.com",
+              "domain:habr.com",
+              "domain:habrastorage.org",
+              "domain:tuta.com",
+              "domain:tutanota.com",
+              "domain:novayagazeta.ru",
+              "domain:tvrain.ru",
+              "domain:meduza.io",
+              "domain:bbc.com",
+              "domain:bbc.co.uk",
+              "domain:tiktok.com",
+              "domain:tiktokcdn.com",
+              "domain:bytedance.com",
+              "domain:byteimg.com",
+              "domain:musical.ly",
+              "domain:canva.com",
+              "domain:adobe.com",
+              "domain:gemini.google.com",
+              "domain:bard.google.com",
+              "domain:aistudio.google.com",
+              "domain:generativelanguage.googleapis.com"
+            ]
+          },
+          {
+            "type": "field",
+            "outboundTag": "direct",
+            "domain": [
+              "domain:yandex.com",
+              "domain:yandex.ru",
+              "domain:yandex.by",
+              "domain:yandex.net",
+              "domain:yastatic.net",
+              "domain:yandexcloud.net",
+              "domain:vk.com",
+              "domain:vk.me",
+              "domain:vkcache.com",
+              "domain:userapi.com",
+              "domain:vk-cdn.net",
+              "domain:mycdn.me",
+              "domain:sberbank.com",
+              "domain:ozonusercontent.com",
+              "domain:avito.st",
+              "domain:2gis.com",
+              "domain:gismeteo.net",
+              "domain:boosty.to",
+              "domain:livejournal.com",
+              "domain:kaspersky.com",
+              "domain:kaspersky-labs.com",
+              "domain:nnmclub.to",
+              "domain:kinozal.tv",
+              "domain:animego.org",
+              "domain:animego.me",
+              "domain:4pda.to",
+              "domain:wbstatic.net",
+              "domain:vk-portal.net",
+              "domain:tbank.ru",
+              "domain:rutube.ru",
+              "domain:cdn-vk.ru",
+              "domain:lmru.tech",
+              "domain:mradx.net",
+              "domain:ozone.ru",
+              "domain:okcdn.ru",
+              "domain:ok.ru",
+              "domain:cdn-tinkoff.ru",
+              "domain:lenta.com",
+              "domain:gismeteo.com",
+              "domain:ru",
+              "domain:xn--p1ai",
+              "domain:by",
+              "domain:su"
+            ]
+          },
+          {
+            "type": "field",
+            "network": "tcp,udp",
+            "balancerTag": "eu_balancer"
+          }
+        ]
+      },
+      "meta": null
+    },
+    {
+      "remarks": "🇪🇺 Запасной Европа",
+      "log": {
+        "loglevel": "warning"
+      },
+      "dns": {
+        "tag": "dns_out",
+        "queryStrategy": "UseIPv4",
+        "servers": [
+          {
+            "address": "77.88.8.8",
+            "domains": [
+              "domain:ru",
+              "domain:su",
+              "domain:by",
+              "domain:yandex.com",
+              "domain:vk.com",
+              "domain:ok.ru"
+            ],
+            "skipFallback": true
+          },
+          "https://9.9.9.9/dns-query",
+          "https://1.1.1.1/dns-query"
+        ]
+      },
+      "inbounds": [
+        {
+          "tag": "socks-in",
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": true
+          },
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        },
+        {
+          "tag": "http-in",
+          "listen": "127.0.0.1",
+          "port": 10809,
+          "protocol": "http",
+          "settings": {},
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "tag": "vless_eu",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "ss.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_ru",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "ns.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_fallback",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "bs.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "direct",
+          "protocol": "freedom",
+          "settings": {
+            "domainStrategy": "UseIPv4"
+          }
+        },
+        {
+          "tag": "block",
+          "protocol": "blackhole",
+          "settings": {}
+        }
+      ],
+      "observatory": {
+        "enableConcurrency": true,
+        "probeInterval": "10m",
+        "probeURL": "https://www.google.com/generate_204",
+        "subjectSelector": [
+          "vless_eu",
+          "vless_ru",
+          "vless_fallback"
+        ]
+      },
+      "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "balancers": [
+          {
+            "tag": "eu_balancer",
+            "selector": [
+              "vless_eu",
+              "vless_ru",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          },
+          {
+            "tag": "ru_balancer",
+            "selector": [
+              "vless_ru",
+              "vless_eu",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          }
+        ],
+        "rules": [
+          {
+            "type": "field",
+            "protocol": [
+              "bittorrent"
+            ],
+            "outboundTag": "direct"
+          },
+          {
+            "type": "field",
+            "balancerTag": "ru_balancer",
+            "domain": [
+              "domain:whatsapp.net",
+              "domain:whatsapp.com",
+              "domain:cdninstagram.com",
+              "domain:igcdn.com",
+              "domain:fbcdn.net",
+              "domain:sndcdn.com",
+              "domain:spotify.com",
+              "domain:scdn.co",
+              "domain:spotifycdn.com",
+              "domain:habr.com",
+              "domain:habrastorage.org",
+              "domain:tuta.com",
+              "domain:tutanota.com",
+              "domain:novayagazeta.ru",
+              "domain:tvrain.ru",
+              "domain:meduza.io",
+              "domain:bbc.com",
+              "domain:bbc.co.uk",
+              "domain:tiktok.com",
+              "domain:tiktokcdn.com",
+              "domain:bytedance.com",
+              "domain:byteimg.com",
+              "domain:musical.ly",
+              "domain:canva.com",
+              "domain:adobe.com",
+              "domain:gemini.google.com",
+              "domain:bard.google.com",
+              "domain:aistudio.google.com",
+              "domain:generativelanguage.googleapis.com"
+            ]
+          },
+          {
+            "type": "field",
+            "outboundTag": "direct",
+            "domain": [
+              "domain:yandex.com",
+              "domain:yandex.ru",
+              "domain:yandex.by",
+              "domain:yandex.net",
+              "domain:yastatic.net",
+              "domain:yandexcloud.net",
+              "domain:vk.com",
+              "domain:vk.me",
+              "domain:vkcache.com",
+              "domain:userapi.com",
+              "domain:vk-cdn.net",
+              "domain:mycdn.me",
+              "domain:sberbank.com",
+              "domain:ozonusercontent.com",
+              "domain:avito.st",
+              "domain:2gis.com",
+              "domain:gismeteo.net",
+              "domain:boosty.to",
+              "domain:livejournal.com",
+              "domain:kaspersky.com",
+              "domain:kaspersky-labs.com",
+              "domain:nnmclub.to",
+              "domain:kinozal.tv",
+              "domain:animego.org",
+              "domain:animego.me",
+              "domain:4pda.to",
+              "domain:wbstatic.net",
+              "domain:vk-portal.net",
+              "domain:tbank.ru",
+              "domain:rutube.ru",
+              "domain:cdn-vk.ru",
+              "domain:lmru.tech",
+              "domain:mradx.net",
+              "domain:ozone.ru",
+              "domain:okcdn.ru",
+              "domain:ok.ru",
+              "domain:cdn-tinkoff.ru",
+              "domain:lenta.com",
+              "domain:gismeteo.com",
+              "domain:ru",
+              "domain:xn--p1ai",
+              "domain:by",
+              "domain:su"
+            ]
+          },
+          {
+            "type": "field",
+            "network": "tcp,udp",
+            "balancerTag": "eu_balancer"
+          }
+        ]
+      },
+      "meta": null
+    },
+    {
+      "remarks": "🇪🇺 Белый список (Глушилки)",
+      "log": {
+        "loglevel": "warning"
+      },
+      "dns": {
+        "tag": "dns_out",
+        "queryStrategy": "UseIPv4",
+        "servers": [
+          {
+            "address": "77.88.8.8",
+            "domains": [
+              "domain:ru",
+              "domain:su",
+              "domain:by",
+              "domain:yandex.com",
+              "domain:vk.com",
+              "domain:ok.ru"
+            ],
+            "skipFallback": true
+          },
+          "https://9.9.9.9/dns-query",
+          "https://1.1.1.1/dns-query"
+        ]
+      },
+      "inbounds": [
+        {
+          "tag": "socks-in",
+          "listen": "127.0.0.1",
+          "port": 10808,
+          "protocol": "socks",
+          "settings": {
+            "auth": "noauth",
+            "udp": true
+          },
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        },
+        {
+          "tag": "http-in",
+          "listen": "127.0.0.1",
+          "port": 10809,
+          "protocol": "http",
+          "settings": {},
+          "sniffing": {
+            "enabled": true,
+            "destOverride": [
+              "http",
+              "tls",
+              "quic"
+            ]
+          }
+        }
+      ],
+      "outbounds": [
+        {
+          "tag": "vless_eu",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "ns.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_ru",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "ns.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "vless_fallback",
+          "protocol": "vless",
+          "settings": {
+            "vnext": [
+              {
+                "address": "bs.90909.club",
+                "port": 2096,
+                "users": [
+                  {
+                    "id": "452a44b2-037a-43e9-a3c8-ff352db11db6",
+                    "encryption": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "streamSettings": {
+            "network": "grpc",
+            "security": "reality",
+            "grpcSettings": {
+              "serviceName": "vless-grpc-reality"
+            },
+            "realitySettings": {
+              "fingerprint": "safari",
+              "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+              "serverName": "id.vk.com"
+            }
+          }
+        },
+        {
+          "tag": "direct",
+          "protocol": "freedom",
+          "settings": {
+            "domainStrategy": "UseIPv4"
+          }
+        },
+        {
+          "tag": "block",
+          "protocol": "blackhole",
+          "settings": {}
+        }
+      ],
+      "observatory": {
+        "enableConcurrency": true,
+        "probeInterval": "10m",
+        "probeURL": "https://www.google.com/generate_204",
+        "subjectSelector": [
+          "vless_eu",
+          "vless_ru",
+          "vless_fallback"
+        ]
+      },
+      "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "balancers": [
+          {
+            "tag": "eu_balancer",
+            "selector": [
+              "vless_eu",
+              "vless_ru",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          },
+          {
+            "tag": "ru_balancer",
+            "selector": [
+              "vless_ru",
+              "vless_eu",
+              "vless_fallback"
+            ],
+            "fallbackTag": "vless_fallback",
+            "strategy": {
+              "type": "leastPing"
+            }
+          }
+        ],
+        "rules": [
+          {
+            "type": "field",
+            "protocol": [
+              "bittorrent"
+            ],
+            "outboundTag": "direct"
+          },
+          {
+            "type": "field",
+            "balancerTag": "ru_balancer",
+            "domain": [
+              "domain:whatsapp.net",
+              "domain:whatsapp.com",
+              "domain:cdninstagram.com",
+              "domain:igcdn.com",
+              "domain:fbcdn.net",
+              "domain:sndcdn.com",
+              "domain:spotify.com",
+              "domain:scdn.co",
+              "domain:spotifycdn.com",
+              "domain:habr.com",
+              "domain:habrastorage.org",
+              "domain:tuta.com",
+              "domain:tutanota.com",
+              "domain:novayagazeta.ru",
+              "domain:tvrain.ru",
+              "domain:meduza.io",
+              "domain:bbc.com",
+              "domain:bbc.co.uk",
+              "domain:tiktok.com",
+              "domain:tiktokcdn.com",
+              "domain:bytedance.com",
+              "domain:byteimg.com",
+              "domain:musical.ly",
+              "domain:canva.com",
+              "domain:adobe.com",
+              "domain:gemini.google.com",
+              "domain:bard.google.com",
+              "domain:aistudio.google.com",
+              "domain:generativelanguage.googleapis.com"
+            ]
+          },
+          {
+            "type": "field",
+            "outboundTag": "direct",
+            "domain": [
+              "domain:yandex.com",
+              "domain:yandex.ru",
+              "domain:yandex.by",
+              "domain:yandex.net",
+              "domain:yastatic.net",
+              "domain:yandexcloud.net",
+              "domain:vk.com",
+              "domain:vk.me",
+              "domain:vkcache.com",
+              "domain:userapi.com",
+              "domain:vk-cdn.net",
+              "domain:mycdn.me",
+              "domain:sberbank.com",
+              "domain:ozonusercontent.com",
+              "domain:avito.st",
+              "domain:2gis.com",
+              "domain:wbstatic.net",
+              "domain:vk-portal.net",
+              "domain:tbank.ru",
+              "domain:rutube.ru",
+              "domain:cdn-vk.ru",
+              "domain:ozone.ru",
+              "domain:okcdn.ru",
+              "domain:ok.ru",
+              "domain:cdn-tinkoff.ru"
+            ]
+          },
+          {
+            "type": "field",
+            "network": "tcp,udp",
+            "balancerTag": "eu_balancer"
+          }
+        ]
+      },
+      "meta": null
+    }
+  ]
+}
