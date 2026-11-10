@@ -1,0 +1,245 @@
+{
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com"
+    },
+    "queryStrategy": "UseIPv4",
+    "servers": [
+      {
+        "address": "77.88.8.8",
+        "domains": ["geosite:category-ru"],
+        "skipFallback": true
+      },
+      {
+        "address": "1.1.1.1",
+        "domains": ["geosite:geolocation-!cn"],
+        "skipFallback": true
+      },
+      "1.1.1.1",
+      {
+        "address": "1.1.1.1",
+        "domains": [],
+        "port": 53
+      },
+      {
+        "address": "8.8.8.8",
+        "domains": [],
+        "port": 53
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ],
+        "enabled": true
+      },
+      "tag": "socks"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 11111,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      },
+      "tag": "metrics_in"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "metrics": {
+    "tag": "metrics_out"
+  },
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false,
+        "xudpConcurrency": 8,
+        "xudpProxyUDP443": ""
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "de-bots3.h1cloud.net",
+            "port": 25469,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "0febdf96-c364-4a8a-af2b-7707e102e31a",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "finalmask": {
+          "tcp": [
+            {
+              "settings": {
+                "delay": "10-20",
+                "length": "50-100",
+                "maxSplit": "100-200",
+                "packets": "1-3"
+              },
+              "type": "fragment"
+            }
+          ]
+        },
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "headers": {
+            "Host": "de-bots3.h1cloud.net"
+          },
+          "host": "de-bots3.h1cloud.net",
+          "path": "/media-ws"
+        }
+      },
+      "tag": "proxy"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "0": {
+        "statsUserDownlink": true,
+        "statsUserUplink": true
+      },
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsInboundDownlink": true,
+      "statsInboundUplink": true,
+      "statsOutboundDownlink": true,
+      "statsOutboundUplink": true
+    }
+  },
+  "remarks": "EzzyVPN",
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "inboundTag": [
+          "metrics_in"
+        ],
+        "outboundTag": "metrics_out"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:category-ru",
+          "geosite:yandex",
+          "geosite:mail-ru",
+          "geosite:gosuslugi",
+          "geosite:sberbank",
+          "geosite:tinkoff",
+          "geosite:vtb",
+          "geosite:alfabank",
+          "geosite:dnevnik",
+          "domain:dnevnik.ru",
+          "domain:authedu.mosreg.ru",
+          "domain:school.mosreg.ru",
+          "domain:mosreg.ru",
+          "domain:school.mos.ru",
+          "domain:mos.ru",
+          "domain:nalog.gov.ru",
+          "domain:nalog.ru",
+          "domain:gosuslugi.ru",
+          "domain:sberbank.ru",
+          "domain:sber.ru",
+          "domain:tinkoff.ru",
+          "domain:tbank.ru",
+          "domain:vtb.ru",
+          "domain:alfabank.ru",
+          "domain:raiffeisen.ru",
+          "domain:gazprombank.ru",
+          "domain:psbank.ru",
+          "domain:rshb.ru",
+          "domain:mkb.ru",
+          "domain:yandex.ru",
+          "domain:yandex.net",
+          "domain:ya.ru",
+          "domain:mail.ru",
+          "domain:vk.com",
+          "domain:ok.ru",
+          "domain:avito.ru",
+          "domain:ozon.ru",
+          "domain:wildberries.ru",
+          "domain:rzd.ru",
+          "domain:aeroflot.ru",
+          "domain:mosmetro.ru",
+          "domain:mosgortrans.ru"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": [
+          "geoip:ru",
+          "geoip:private"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "inboundTag": [
+          "socks"
+        ],
+        "outboundTag": "proxy",
+        "port": "53"
+      },
+      {
+        "ip": [
+          "1.1.1.1"
+        ],
+        "outboundTag": "proxy",
+        "port": "53"
+      },
+      {
+        "ip": [
+          "8.8.8.8"
+        ],
+        "outboundTag": "direct",
+        "port": "53"
+      }
+    ]
+  },
+  "stats": {}
+}
